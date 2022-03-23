@@ -2,12 +2,19 @@ let slider = document.getElementById("myRange");
 let output = document.getElementById("demo");
 let mainPic = document.getElementById("mainPic");
 let popupText = document.getElementById("popupText");
+let categoryText = document.getElementById("categoryText");
 output.innerHTML = slider.value;
 
 slider.oninput = function() {
     output.innerText = this.value;
-
+    if (popupText.innerHTML !== ""){
+        popupText.style.visibility = "visible";
+    }
+    else{
+        popupText.style.visibility = "hidden";
+    }
     if (this.value >= -40 && this.value < -17){
+        categoryText.innerHTML = "Dypfryst";
         output.innerHTML = this.value;
         mainPic.src = "deepfreeze.jpg";
         if (this.value >= -40 && this.value < -29){
@@ -23,9 +30,12 @@ slider.oninput = function() {
     }
     else if (this.value >= -17 && this.value < -10){
         mainPic.src = "snow.jpg";
+        categoryText.innerHTML = "Kald vinter";
+        popupText.innerHTML = "";
     }
     else if (this.value >= -10 && this.value < 1){
         mainPic.src = "snowing.jpg";
+        categoryText.innerHTML = "Snøfall";
         if (this.value >= -5 && this.value < 0){
             popupText.innerHTML = "For at det kalles vinter, må temperaturen være under 0 i en lengre periode. Derfor er det mange steder i Norge som faktisk ikke har vinter!";
         }
@@ -39,6 +49,7 @@ slider.oninput = function() {
 
     else if (this.value >= 1 && this.value < 10){
         mainPic.src = "slush.jpg";
+        categoryText.innerHTML = "Sørpe";
 
         if (this.value >= 0 && this.value < 10){
             popupText.innerHTML = "Hvis det er snø ute så er den kram! Gå og lag snøballer!";
@@ -51,5 +62,12 @@ slider.oninput = function() {
             popupText.innerHTML = "";
         }
 
+    }
+
+    if (popupText.innerHTML !== ""){
+        popupText.style.visibility = "visible";
+    }
+    else{
+        popupText.style.visibility = "hidden";
     }
 }

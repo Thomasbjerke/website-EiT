@@ -22,7 +22,7 @@
     appearance: none;
     width: 25px;
     height: 25px;
-    background: #04AA6D;
+    background: #80B08A;
     cursor: pointer;
 }
 
@@ -37,18 +37,45 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 30%;
 }
 
 img {
-    padding-bottom: 50px;
-    height: 500px;
+    height: 20%;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: black;
 }
 
 #popupText {
+    font-size: 1vw;
+    margin-left: 80%;
+    margin-top: -30%;
+    position: absolute;
     border-style: solid;
     border-radius: 1px;
     border-color: red;
     display: inline-block;
-    padding: 1em;
+    padding: 1vw;
+    padding-right: 1vw;
+    visibility: hidden;
+    max-width: 15vw;
 }
+
+#headerText {
+    font-family: voltaire;
+    font-size: 3vw;
+    text-align: center;
+    font-style: unset;
+}
+
+#categoryText {
+    font-family: voltaire;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+
+
+
