@@ -1,12 +1,12 @@
 let slider = document.getElementById("myRange");
-let output = document.getElementById("demo");
+let output = document.getElementById("currentValue");
 let mainPic = document.getElementById("mainPic");
 let popupText = document.getElementById("popupText");
 let categoryText = document.getElementById("categoryText");
-output.innerHTML = slider.value;
+output.innerHTML = slider.value + " ℃";
 
 slider.oninput = function() {
-    output.innerText = this.value;
+    output.innerText = this.value + " ℃";
     if (popupText.innerHTML !== ""){
         popupText.style.visibility = "visible";
     }
