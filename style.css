@@ -1,5 +1,11 @@
+body{
+    background-color: #A5B3CF;
+}
+
 .slidecontainer {
-    width: 100%;
+    width: 50%;
+    float: left;
+    margin-top: -2%;
 }
 
 .slider {
@@ -37,29 +43,49 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 50%;
 }
 
-img {
-    height: 20%;
+#mainPic{
+    height: 100%;
     border-style: solid;
     border-radius: 1px;
     border-color: black;
 }
 
+#taskbarImage{
+    position: fixed;
+    bottom: 0px;
+    height: 30%;
+    width: 100%;
+}
+
+#kelvinImage{
+    width: 20%;
+    margin-left: 30%;
+}
+
+#divcontainer{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#resultscontainer{
+    width: 50%;
+    margin-left: 50%;
+}
+
 #popupText {
     font-size: 1vw;
-    margin-left: 80%;
-    margin-top: -30%;
+    margin-left: 30%;
+    /*margin-top: -30%;*/
     position: absolute;
-    border-style: solid;
-    border-radius: 1px;
-    border-color: red;
     display: inline-block;
     padding: 1vw;
     padding-right: 1vw;
     visibility: hidden;
     max-width: 15vw;
+    width: 30%;
 }
 
 #headerText {
@@ -71,11 +97,78 @@ img {
 
 #categoryText {
     font-family: voltaire;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     text-align: center;
 }
 
 
+
+
+
+p.bubble {
+    position: relative;
+    width: 300px;
+    text-align: center;
+    line-height: 1.4em;
+    margin: 40px auto;
+    background-color: #fff;
+    border: 8px solid #333;
+    border-radius: 30px;
+    font-family: sans-serif;
+    padding: 20px;
+    font-size: large;
+}
+
+p.thought {
+    width: 300px;
+    border-radius: 200px;
+    padding: 30px;
+}
+
+p.bubble:before,
+p.bubble:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+p.speech:before {
+    left: 30px;
+    bottom: -50px;
+    border: 25px solid;
+    border-color: #333 transparent transparent #333;
+}
+
+p.speech:after {
+    left: 38px;
+    bottom: -30px;
+    border: 15px solid;
+    border-color: #fff transparent transparent #fff;
+}
+
+p.thought:before,
+p.thought:after {
+    left: 10px;
+    bottom: -30px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 8px solid #333;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+}
+
+p.thought:after {
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    bottom: -40px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+}
 
 
 

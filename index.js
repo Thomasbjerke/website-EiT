@@ -16,7 +16,7 @@ slider.oninput = function() {
     if (this.value >= -40 && this.value < -17){
         categoryText.innerHTML = "Dypfryst";
         output.innerHTML = this.value;
-        mainPic.src = "deepfreeze.jpg";
+        mainPic.src = "deepfreeze.jpg"
         if (this.value >= -40 && this.value < -29){
             popupText.innerHTML = "Hvis du nå kaster kokende vann opp i lufta, så vil det fryse! Få hjelp av en voksen om du vil prøve.";
         }
