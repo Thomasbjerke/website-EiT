@@ -55,6 +55,13 @@ body{
     border-color: black;
 }
 
+#sky{
+    width: 14%;
+    position: absolute;
+    left: 60%;
+    top: 5%;
+}
+
 #taskbarImage{
     position: fixed;
     bottom: 0px;
