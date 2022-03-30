@@ -1,5 +1,6 @@
 body{
     background-color: #A5B3CF;
+    font-family: voltaire;
 }
 
 .slidecontainer {
@@ -46,6 +47,16 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.menuButton{
+    position: fixed;
+    z-index: 5;
+    font-size: 1.5vw;
+    background-color: #807559;
+    color: #DDE398;
+    padding: 5px;
+    border-radius: 0.7vw;
 }
 
 #mainPic{
@@ -115,6 +126,46 @@ body{
     font-family: voltaire;
     font-size: 1.5vw;
     text-align: center;
+}
+
+#homeButton{
+    left: 71%;
+    top: 85%;
+}
+
+#gamesButton{
+    left: 65%;
+    top: 83%;
+}
+
+#recordsButton{
+    left: 77%;
+    top: 84%;
+}
+
+#thermometerButton{
+    left: 54%;
+    top: 86%;
+    border-style: solid;
+    border-width: 0.3vw;
+    border-color: black;
+}
+
+#experimentsButton{
+    left: 59%;
+    top: 93%;
+}
+
+#dialektButton{
+    left: 74%;
+    top: 91%;
+}
+
+#teacherButton{
+    padding: 0px;
+    font-size: 1vw;
+    left: 15%;
+    top: 96%;
 }
 
 .box {

@@ -20,7 +20,7 @@ slider.oninput = function() {
         if (this.value >= -40 && this.value < -29){
             popupText.innerHTML = "Hvis du nå kaster kokende vann opp i lufta, så vil det fryse! Få hjelp av en voksen om du vil prøve.";
         }
-        else if (this.value == -18){
+        else if (this.value === "-18"){
             popupText.innerHTML = "Like kaldt som i frysedisken";
         }
         else{
